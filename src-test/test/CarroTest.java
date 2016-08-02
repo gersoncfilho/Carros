@@ -32,5 +32,49 @@ public class CarroTest extends TestCase {
 		assertEquals("Bugatti Veyron", bugatti.getNome());
 	}
 	
+	public void testSalvarDeletarCarro()
+	{
+		Carro c = new Carro();
+		c.setNome("Teste");
+		c.setDesc("Teste Desc");
+		c.setUrlFoto("teste urlfoto");
+		c.setUrlVideo("teste urlvideo");
+		c.setLatitude("teste latitude");
+		c.setLongitude("longitude");
+		c.setTipo("tipo");
+		carroService.save(c);
+		
+		//id do carro salvo
+		Long id = c.getId();
+		assertNotNull(id);
+		
+		//Busca no banco de dados para confirmar se o carro foi salvo
+		c = carroService.getCarro(id);
+		assertEquals("Teste", c.getNome());
+		assertEquals("Teste Desc", c.getDesc());
+		assertEquals("teste urlfoto", c.getUrlFoto());
+		assertEquals("teste urlvideo", c.getUrlVideo());
+		assertEquals("teste latitude", c.getLatitude());
+		assertEquals("longitude", c.getLongitude());
+		assertEquals("tipo", c.getTipo());
+		
+		//atualiza carro
+		c.setNome("Teste Update");
+		carroService.save(c);
+		
+		//Busca carro novamente
+		c = carroService.getCarro(id);
+		assertEquals("Teste Update", c.getNome());
+		
+		//Deleta o carro
+		carroService.delete(id);
+		
+		//Busca carro novamente
+		c = carroService.getCarro(id);
+		
+		//Desta vez o carro nao existe
+		assertNull(c);
+	}
+	
 
 }
