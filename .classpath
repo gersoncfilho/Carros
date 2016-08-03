@@ -32,5 +32,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jettison-1.3.3.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/gersoncardoso/Downloads/jersey-bundle-1.19.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/gersoncardoso/Downloads/javax.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/gersoncardoso/Downloads/hk2-api-2.1.8.jar/hk2-api-2.1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/gersoncardoso/Downloads/jersey-media-json-jettison-2.2.jar/jersey-media-json-jettison-2.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

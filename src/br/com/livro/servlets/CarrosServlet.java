@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.livro.domain.Carro;
 import br.com.livro.domain.CarroService;
 import br.com.livro.domain.ListaCarros;
+import br.com.livro.domain.Response;
 import br.com.livro.util.JAXBUtil;
 import br.com.livro.util.RegexUtil;
 
@@ -93,7 +94,6 @@ public class CarrosServlet extends HttpServlet {
 	}
 
 	
-	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
@@ -111,6 +111,30 @@ public class CarrosServlet extends HttpServlet {
 	}
 	
 	
+	@Override
+	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String requestUri = req.getRequestURI();
+		Long id = RegexUtil.matchId(requestUri);
+		if( id != null)
+		{
+			carroService.delete(id);
+			Response r = Response.Ok("Carro excluído com sucesso");
+			Gson gson = new GsonBuilder().setPrettyPrinting().create();
+			String json = gson.toJson(r);
+			ServletUtil.writeJSON(resp, json);
+		}else
+		{
+			//URL inválida
+			resp.sendError(404,"URL inválida");
+		}
+	}
+
+	@Override
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doPut(req, resp);
+	}
+
 	private Carro getCarroFromRequest(HttpServletRequest request)
 	{
 		Carro carro = new Carro();
