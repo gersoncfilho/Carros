@@ -155,9 +155,9 @@ public class CarroDAO extends BaseDAO {
 			conn = getConnection();
 			if(c.getId() == null)
 			{
-				stmt = conn.prepareStatement("insert into carro(nome, descricao, url_foto, url_video, latitude, longitude, tipo) values (?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+				stmt = conn.prepareStatement("insert into carro(nome, descricao, urlfoto, urlvideo, latitude, longitude, tipo) values (?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
 			}else{
-				stmt = conn.prepareStatement("update carro set nome=?, descricao=?, url_foto=?, utl_video=?, latitude=?, longitude=?, tipo=? where id=?");
+				stmt = conn.prepareStatement("update carro set nome=?, descricao=?, urlfoto=?, urlvideo=?, latitude=?, longitude=?, tipo=? where id=?");
 			}
 			stmt.setString(1,  c.getNome());
 			stmt.setString(2,  c.getDesc());
