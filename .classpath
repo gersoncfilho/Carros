@@ -12,29 +12,33 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
-		<attributes>
-			<attribute name="owner.project.facets" value="jst.web"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jettison-1.3.3.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gersoncardoso/Downloads/jersey-bundle-1.19.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gersoncardoso/Downloads/javax.jar.zip"/>
-	<classpathentry kind="lib" path="C:/Users/gersoncardoso/Downloads/hk2-api-2.1.8.jar/hk2-api-2.1.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gersoncardoso/Downloads/jersey-media-json-jettison-2.2.jar/jersey-media-json-jettison-2.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/hk2-api-2.4.0-b10.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/hk2-locator-2.4.0-b10.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/hk2-utils-2.4.0-b10.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/javax.annotation-api-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/javax.inject-2.4.0-b10.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-client.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-common.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-container-servlet-core.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-container-servlet.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-entity-filtering-2.17.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-guava-2.17.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-json-1.19.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-media-jaxb.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-media-json-jettison-2.17.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jersey-server.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/jettison-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/mysql-connector-java-5.1.13-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/gersoncardosofilho/Downloads/1ed-master/cap06-rest/Carros/WebContent/WEB-INF/lib/validation-api-1.1.0.Final.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

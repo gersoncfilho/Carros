@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.ws.rs.core.Application;
 
+
 import org.glassfish.jersey.jettison.JettisonFeature;
 
 
@@ -15,17 +16,6 @@ public class MyApplication extends Application{
 		// TODO Auto-generated method stub
 
 	}
-
-	@Override
-	public Set<Object> getSingletons() 
-	{
-		// TODO Auto-generated method stub
-		Set<Object> singletons = new HashSet<>();
-		
-		//Driver do jettison para gerar o json
-		singletons.add(new JettisonFeature());
-		return singletons;
-	}
 	
 	public Map<String, Object> getProperties()
 	{
@@ -33,6 +23,12 @@ public class MyApplication extends Application{
 		//Configura o pacote para fazer scan das classes com anotacoes REST
 		properties.put("jersey.config.server.provider.packages", "br.com.livro");
 		return properties;
+	}
+
+	@Override
+	public Set<Class<?>> getClasses() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
